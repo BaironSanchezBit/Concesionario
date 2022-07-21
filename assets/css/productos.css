@@ -3,6 +3,7 @@
     --color-negro: #000000;
     --color-gris-nav: #d2d4d5;
     --color-text-nav: #000;
+    --color-rojo-autostyle: red;
 }
 
 /*NAVBAR*/
@@ -80,6 +81,12 @@ nav{
 
 .secciones div :hover{
     transform: scale(1.2);
+}
+
+.secciones button{
+    margin: 10px;
+    background-color: var(--color-rojo-autostyle);
+    color: var(--color-blanco);
 }
 
 h2{
