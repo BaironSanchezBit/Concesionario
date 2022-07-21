@@ -1,0 +1,88 @@
+:root{
+    --color-blanco: #ffffff;
+    --color-negro: #000000;
+    --color-gris-nav: #d2d4d5;
+    --color-text-nav: #000;
+}
+
+/*NAVBAR*/
+nav{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--color-gris-nav);
+    position: sticky;
+    top: 0;
+}
+.div-start-nav, .div-start-nav a{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.logo-nav{
+    width: 200px;
+    height: 75px;
+    margin: 0 5% 0;
+}
+.logo-nav:hover{
+    cursor: pointer;
+}
+.img-nav{
+    width: 25px;
+    margin-right: 5px;
+}
+.a-nav{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--color-text-nav);
+    padding: 0 20px;
+}
+.div-sections-nav{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-sections-nav:hover{
+    border-bottom: 3px solid var(--color-text-nav);
+    background-color: rgb(190, 190, 190);
+}
+.div-end-nav, .div-end-nav a{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#border-contact{
+    border-right: 1px solid var(--color-text-nav);
+}
+
+/*NAVBAR*/
+
+.seccion1{
+    display: flex;
+}
+
+.seccion1 img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10%;
+}
+
+.seccion1 div{
+    box-shadow: 0 0 8px var(--color-negro);
+    border-radius: 10%;
+    width: 300px;
+    height: 300px;
+    margin: 10px 10px;
+}
+
+.seccion1 div :hover{
+    transform: scale(1.2);
+}
+
+.seccion1 h3{
+    text-align: center;
+}
+
+h2{
+    font-size: 32px;
+}
