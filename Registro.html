@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AUTO STYLE | Registro</title>
     <link rel="stylesheet" href="assets/css/registro.css">
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
@@ -39,18 +39,27 @@
 
     <section class="seccion1">
         <img src="assets/img/AutoStyle.jpg" alt="">
-        <h1 class="animate__animated animate__backInUp">Registrarse</h1>
+        <img class="rueda" src="https://images.ghostbikes.com/motorcyclist/Wheel-rotate-2.gif" alt="">
+        <h1 class="animate__animated animate__pulse animate__infinite">Registrarse</h1>
         <form class="formulario" action="">
             <input type="text" placeholder="Nombres">
             <input type="text" placeholder="Apellidos">
+            <h3>Tipo de documento:</h3>
+            <div class="documento">
+                <input type="radio" name="#" id="#">
+                <label for="#">C.C</label>
+                <input type="radio" name="#" id="#">
+                <label for="#">NIT</label>
+                <input type="radio" name="#" id="#">
+                <label for="#">Otro</label>
+            </div>
+            <input type="text" placeholder="N° de documento">
             <input type="text" placeholder="Celular">
             <input type="text" placeholder="Dirección">
             <input required type="email" placeholder="Correo electrónico">
             <input required type="password" placeholder="Contraseña">
             <input required type="password" placeholder="Confirmar contraseña">
-            <button class="btn-registro" type="submit">
-                Crear cuenta
-            </button>
+            <button class="btn-registro" type="submit">Crear cuenta</button>
         </form>
     </section>
 </body>
