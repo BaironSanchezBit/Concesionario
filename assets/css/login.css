@@ -90,6 +90,14 @@ body {
     height: 100vh;
 }
 
+.seccion-1,
+.seccion-2,
+.fondo-blanco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .seccion-1 img {
     width: 800px;
@@ -99,6 +107,7 @@ body {
 .fondo-blanco {
     flex-direction: column;
 }
+
 
 .fondo-blanco {
     background: var(--color-gris-formulario);
@@ -117,8 +126,7 @@ body {
     padding: 14px 16px;
     width: 330px;
     outline: 1px solid var(--color-gris-formulario);
-    margin: 20px;
-
+    margin: 13px;
 }
 
 .formulario input:focus-visible {
@@ -152,15 +160,6 @@ body {
     background-color: var(--color-rojo-autostyle-hover);
 }
 
-
-.seccion-1,
-.seccion-2,
-.fondo-blanco {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .enlace-olvide {
     padding: 20px 0 0;
     color: var(--color-blanco);
@@ -181,4 +180,20 @@ body {
 
 .btn-crear-cuenta:hover {
     background-color: var(--color-rojo-autostyle-hover);
+}
+
+@media (max-width:900px) {
+    .contenedor {
+        display: block;
+    }
+
+    .seccion-1 {
+        transform: scale(0.5);
+        position: relative;
+        z-index: -9;
+    }
+
+    .fondo-blanco {
+        margin-bottom: 100px;
+    }
 }

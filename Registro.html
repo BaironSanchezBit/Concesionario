@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AUTO STYLE | Registro</title>
     <link rel="stylesheet" href="assets/css/registro.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
@@ -38,24 +39,17 @@
 
     <section class="seccion1">
         <img src="assets/img/AutoStyle.jpg" alt="">
-        <h1>Registrarse</h1>
+        <h1 class="animate__animated animate__backInUp">Registrarse</h1>
         <form class="formulario" action="">
             <input type="text" placeholder="Nombres">
             <input type="text" placeholder="Apellidos">
-            <label for="">Género:</label>
-            <div>
-                <input type="radio" name="#" id="hombre">
-                <label for="hombre">Hombre</label>
-                <input type="radio" name="#" id=";ujer">
-                <label for="mujer">Mujer</label>
-            </div>
             <input type="text" placeholder="Celular">
             <input type="text" placeholder="Dirección">
-            <input type="email" placeholder="Correo electrónico">
-            <input type="password" placeholder="Contraseña">
-            <input type="password" placeholder="Confirmar contraseña">
+            <input required type="email" placeholder="Correo electrónico">
+            <input required type="password" placeholder="Contraseña">
+            <input required type="password" placeholder="Confirmar contraseña">
             <button class="btn-registro" type="submit">
-                <a href="#">Registrarse</a>
+                Crear cuenta
             </button>
         </form>
     </section>
