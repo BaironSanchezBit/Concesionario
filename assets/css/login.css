@@ -1,0 +1,184 @@
+:root {
+    --tipografia-facebook: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    --color-rojo-autostyle: red;
+    --color-verde-facebook: #42b72a;
+    --color-gris-formulario: #393a3b;
+    --color-blanco: #ffffff;
+    --color-negro: #000000;
+    --color-negro-carros: #191919;
+    --color-rojo-autostyle-hover: #d15146;
+    --color-gris-nav: #d2d4d5;
+    --color-text-nav: #000;
+}
+
+/*NAVBAR*/
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--color-gris-nav);
+    position: sticky;
+    top: 0;
+}
+
+.div-start-nav, .div-start-nav a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo-nav {
+    width: 200px;
+    height: 75px;
+    margin: 0 5% 0;
+}
+
+.logo-nav:hover {
+    cursor: pointer;
+}
+
+.img-nav {
+    width: 25px;
+    margin-right: 5px;
+}
+
+.a-nav {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--color-text-nav);
+    padding: 0 20px;
+}
+
+.div-sections-nav {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-sections-nav:hover {
+    border-bottom: 3px solid var(--color-text-nav);
+    background-color: rgb(190, 190, 190);
+}
+
+.div-end-nav, .div-end-nav a {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#border-contact {
+    border-right: 1px solid var(--color-text-nav);
+}
+
+/*NAVBAR*/
+
+
+
+body {
+    background: var(--color-negro-carros);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    height: 100vh;
+}
+
+
+.seccion-1 img {
+    width: 800px;
+}
+
+.seccion-2,
+.fondo-blanco {
+    flex-direction: column;
+}
+
+.fondo-blanco {
+    background: var(--color-gris-formulario);
+    border-radius: 10%;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario input[type="email"],
+.formulario input[type="password"] {
+    padding: 14px 16px;
+    width: 330px;
+    outline: 1px solid var(--color-gris-formulario);
+    margin: 20px;
+
+}
+
+.formulario input:focus-visible {
+    border: 1px solid var(--color-rojo-autostyle);
+}
+
+
+.btn-inicio-sesion {
+    width: 330px;
+    height: 52px;
+    background-color: var(--color-rojo-autostyle);
+}
+
+
+.btn-inicio-sesion,
+.btn-crear-cuenta {
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    transition: all 200ms;
+}
+
+.btn-inicio-sesion a,
+.btn-crear-cuenta a {
+    color: var(--color-blanco);
+}
+
+
+.btn-inicio-sesion:hover {
+    background-color: var(--color-rojo-autostyle-hover);
+}
+
+
+.seccion-1,
+.seccion-2,
+.fondo-blanco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlace-olvide {
+    padding: 20px 0 0;
+    color: var(--color-blanco);
+}
+
+.separador {
+    border-top: 1px solid #808080;
+    margin: 10px 0;
+    width: 80%;
+}
+
+.btn-crear-cuenta {
+    background-color: var(--color-rojo-autostyle);
+    width: 190px;
+    height: 50px;
+    margin: 20px;
+}
+
+.btn-crear-cuenta:hover {
+    background-color: var(--color-rojo-autostyle-hover);
+}
