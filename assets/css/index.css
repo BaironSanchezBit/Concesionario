@@ -2,62 +2,144 @@
     --color-gris-nav: #d2d4d5;
     --color-gris-fondo: #f4f4f4;
     --color-azul: #326fac;
-    --color-text-nav: #000;
     --color-blanco: #fff;
     --color-footer: #6a6a6a;
     --color-facebook: #3f75e1;
     --color-youtube: #dd4040;
     --color-instagram: #ca39d2;
     --color-twitter: #3ab4cf;
+    --color-nav: #0c3779;
+    --color-text-nav: #ffffff;
+    --color-verde: #43df72;
+    --color-verde-oscuro: #39884d;
 }
-
+    
 nav{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: var(--color-gris-nav);
+    background-color: var(--color-nav);
+    display: flex;
+    justify-content: space-between;
     position: sticky;
     top: 0;
 }
-.div-start-nav, .div-start-nav a{
+.logo-nav img{
+    width: 300px;
+    padding-left: 30px;
+}
+.div-menu{
     display: flex;
-    justify-content: start;
     align-items: center;
 }
-.logo-nav{
-    width: 200px;
-    height: 75px;
-    margin: 0 5% 0;
-}
-.logo-nav:hover{
-    cursor: pointer;
-}
-.img-nav{
-    width: 25px;
-    margin-right: 5px;
-}
-.a-nav{
-    text-decoration: none;
-    font-size: 1.3rem;
-    color: var(--color-text-nav);
-    padding: 0 20px;
-}
-.div-sections-nav{
-    height: 100%;
+.div-menu ul{
     display: flex;
+
+}
+.div-menu li{
+    margin: 0 1rem;
+    list-style: none;
+}
+.div-menu a{
+    color: var(--color-text-nav);
+    text-decoration: none;
+    display: flex;  
     justify-content: center;
     align-items: center;
+    font-size: 1.2rem;
 }
-.div-sections-nav:hover{
-    border-bottom: 3px solid var(--color-text-nav);
-    background-color: rgb(190, 190, 190);
+.div-menu a img{
+    width: 25px;
+    padding: 0 5px;
 }
-.div-end-nav, .div-end-nav a{
-    display: flex;
-    justify-content: end;
-    align-items: center;
+.login{
+    background-color: var(--color-verde);
+    padding: .25rem .75rem;
+    border-radius: .2rem;
 }
-#border-contact{
-    border-right: 1px solid var(--color-text-nav);
+.register{
+    background-color: var(--color-verde-oscuro);
+    padding: .25rem .75rem;
+    border-radius: .2rem;
+}
+.menu-icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+.menu-icon, #check{
+    display: none;
+}
+
+@media (max-width:1093px){
+    .checkbtn{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .div-menu ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background-color: #222;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+    }
+    .div-menu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .login{
+        background-color: none;
+        padding: 1rem;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        transition: all .25s;
+    }
+}
+
+@media (max-width:768px){
+    .checkbtn{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .div-menu ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background-color: #222;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+    }
+    .div-menu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .login{
+        background-color: none;
+        padding: 1rem;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        transition: all .25s;
+    }
 }
 .slider{
     overflow: hidden;
@@ -123,24 +205,12 @@ nav{
 @keyframes cambioInit{
     0% {margin-left: 0;}
     20% {margin-left: 0;}
-<<<<<<< HEAD
-
-    25% {margin-left: -40%;}
-    45% {margin-left: -40%;}
-    
-    50% {margin-left: -80%;}
-    70% {margin-left: -80%;}
-
-    75% {margin-left: -100%;}
-    100% {margin-left: -100%;}
-=======
     25% {margin-left: -50%;}
     45% {margin-left: -50%;}
     50% {margin-left: -100%;}
     70% {margin-left: -100%;}
     75% {margin-left: -200%;}
     100% {margin-left: -200%;}
->>>>>>> f0bb107a142f8d413db6591d9784c8f2bd28230d
 }
 footer{
     padding-top: 2%;

@@ -2,46 +2,148 @@
     --color-blanco: #ffffff;
     --color-negro: #000000;
     --color-gris-nav: #d2d4d5;
-    --color-text-nav: #000;
     --color-rojo-autostyle: red;
+    --color-nav: #0c3779;
+    --color-text-nav: #ffffff;
+    --color-verde: #43df72;
+    --color-verde-oscuro: #39884d;
+    --color-gris-fondo: #f4f4f4;
+    --color-azul: #326fac;
+    --color-blanco: #fff;
+    --color-footer: #6a6a6a;
+    --color-facebook: #3f75e1;
+    --color-youtube: #dd4040;
+    --color-instagram: #ca39d2;
+    --color-twitter: #3ab4cf;
 }
 
 /*NAVBAR*/
 nav{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: var(--color-gris-nav);
+    background-color: var(--color-nav);
+    display: flex;
+    justify-content: space-between;
     position: sticky;
     top: 0;
 }
-.div-start-nav, .div-start-nav a{
+.logo-nav img{
+    width: 300px;
+    padding-left: 30px;
+}
+.div-menu{
     display: flex;
-    justify-content: start;
     align-items: center;
 }
-.logo-nav{
-    width: 200px;
-    height: 75px;
-    margin: 0 5% 0;
-}
-.logo-nav:hover{
-    cursor: pointer;
-}
-.img-nav{
-    width: 25px;
-    margin-right: 5px;
-}
-.a-nav{
-    text-decoration: none;
-    font-size: 1.3rem;
-    color: var(--color-text-nav);
-    padding: 0 20px;
-}
-.div-sections-nav{
-    height: 100%;
+.div-menu ul{
     display: flex;
+
+}
+.div-menu li{
+    margin: 0 1rem;
+    list-style: none;
+}
+.div-menu a{
+    color: var(--color-text-nav);
+    text-decoration: none;
+    display: flex;  
     justify-content: center;
     align-items: center;
+    font-size: 1.2rem;
+}
+.div-menu a img{
+    width: 25px;
+    padding: 0 5px;
+}
+.login{
+    background-color: var(--color-verde);
+    padding: .25rem .75rem;
+    border-radius: .2rem;
+}
+.register{
+    background-color: var(--color-verde-oscuro);
+    padding: .25rem .75rem;
+    border-radius: .2rem;
+}
+.menu-icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+.menu-icon, #check{
+    display: none;
+}
+
+@media (max-width:1093px){
+    .checkbtn{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .div-menu ul{
+        display: block;
+        position: fixed;
+        top: 64px;
+        left: -200%;
+        background-color: #222;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+    }
+    .div-menu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .login{
+        background-color: none;
+        padding: 1rem;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        transition: all .25s;
+    }
+}
+
+@media (max-width:768px){
+    .checkbtn{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .div-menu ul{
+        display: block;
+        position: fixed;
+        top: 64px;
+        left: -200%;
+        background-color: #222;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+    }
+    .div-menu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .login{
+        background-color: none;
+        padding: 1rem;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        transition: all .25s;
+    }
 }
 /* FILTROS */
 .section-all{
@@ -87,24 +189,6 @@ nav{
 .span-result, .div-checkbox{
     display: flex;
     align-items: center;
-}
-.div-checkbox{
-    border: 1px solid #979797;
-    border-radius: 6px;
-    padding: 5% 5%;
-    margin: 5%;
-}
-.div-checkbox span{
-    padding-right: 8%;
-}
-#switch:checked + .lbl::after, #switch-1:checked + .lbl-1::after{
-    left: 19px;
-}
-#switch:checked + .lbl, #switch-1:checked + .lbl-1{
-    background: #00C8B1;
-}
-#switch, #switch-1{
-    display: none;
 }
 .marca{
     font-size: 1.5rem;
@@ -202,4 +286,83 @@ nav{
 
 .img-logos{
     width: 10%;
+}
+
+footer{
+    padding-top: 2%;
+    background-color: var(--color-footer);
+    color: var(--color-blanco);
+}
+.enlaces{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.empresa{
+    border-right: 1px solid #a0a0a0;
+}
+.empresa, .menu-footer{
+    padding: 0 5%;
+    font-size: 20px;
+}
+.empresa ul, .menu-footer ul{
+    padding: 0;
+}
+.empresa li, .menu-footer li{
+    list-style: none;
+    padding: 2% 0;
+}
+.empresa a, .menu-footer a{
+    text-decoration: none;
+    color: var(--color-gris-nav);
+    font-size: 18px;
+}
+.div-footer-web{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30%;
+}
+.img-footer{
+    width: 30px;
+    height: 21px;
+    padding: 10px;
+}
+.sitios-web, .sitios-web1, .sitios-web2, .sitios-web3{
+    padding: 0.1% 4.13%; 
+    border-top: 1px solid var(--color-gris-nav);
+    border-bottom: 1px solid var(--color-gris-nav);
+}
+.sitios-web a, .sitios-web1 a, .sitios-web2 a, .sitios-web3 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--color-blanco);
+}
+.sitios-web:hover{
+    background-color: var(--color-facebook);
+}
+.sitios-web1:hover{
+    background-color: var(--color-instagram);
+}
+.sitios-web2:hover{
+    background-color: var(--color-youtube);
+}
+.sitios-web3:hover{
+    background-color: var(--color-twitter);
+}
+.div-logo-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30%;
+}
+.div-logo-footer p{
+    font-size: 11px;
+}
+.logo-footer{
+    width: 150px;
+    margin: 3% 0;
 }
