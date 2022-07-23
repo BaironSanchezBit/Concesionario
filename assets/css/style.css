@@ -64,9 +64,10 @@ nav{
 
 body{
     background-image: url("../img/img5.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
 }
-
-
 
 .contenedor{
     display: grid;
@@ -95,7 +96,6 @@ p{
 .formulario input[type="email"]{
     padding: 14px 16px;
     width: 330px;
-    outline: 1px solid var(--color-gris-facebook);
     margin: 4px 0;
     border-radius: 8px;
     border: none;
@@ -124,6 +124,8 @@ p{
     padding-inline-end: 5px;
     margin: 13px;
     box-shadow: rgb(17 17 17 / 64%) 1px 2px 10px 9px;
+    padding-block: 4%;
+    padding-block-end: 3%;
 }
 
 
@@ -144,7 +146,7 @@ p{
 }
 
 .separador{
-    border-top: 1px solid #9c9c9e;
+    border-top: 1px solid #56565b;
     margin: 18px 0;
     width: 98%;
 
@@ -301,20 +303,78 @@ h1{
     background-color: #9c9c9e;
 }
 
-@media (min-width: 400px) and (max-width:900px) and (orientation:landscape) {
+@media only screen and (max-width:800px) and (min-width:400px) {
     
-    .fondo1{
-        flex-direction: column;
+    
+    .btn-taller1,
+    .btn-taller2,
+    .btn-taller3,
+    .btn-taller4,
+    .btn-taller5,
+    .btn-taller6,
+    .btn-taller7,
+    .btn-taller8,
+    .btn-taller9,
+    .btn-taller10,
+    .btn-taller11{
+    width: 20%;
+    font-size: 50%;
+    padding: 3%;
     }
     
+    .btn-taller6{
+        padding: 2%;
+    }
+    
+    .btn-taller5{
+        padding: 2%;
+    }
+
+    .btn-taller7{
+        padding: 3%;
+    }
+
+    .separador{
+        width: 40%;
+        margin: 2%;
+    }
+
+    .tamano{
+        width: 70%;
+        margin: 1%;
+    }
+    
+    .btn-enviar{
+        width: 40%;
+        font-size: 70%;
+    }
+    
+    .formulario input[type="name"],
+    .formulario input[type="surname"],
+    .formulario input[type="cell phone"],
+    .formulario input[type="email"]{
+    width: 70%;
+    font-size: 70%;
+    }
+    
+    .mensaje{
+        font-size: 50%;
+    }
+
+    .fondo{
+        height: 2%;
+    }
+
     .contenedor{
         flex-direction: column;
     }
+
     .seccion1{
         background-color: #979390 !important;
+        width: 80%;
     }
     .seccion2{
         background-color: #aeacaa !important;
+        width: 80%;
+        font-size: 80%;
     }
-}
-
