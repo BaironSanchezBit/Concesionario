@@ -4,16 +4,11 @@
     --color-azul: #326fac;
     --color-text-nav: #000;
     --color-blanco: #fff;
-    --monoscape: monospace;
     --color-footer: #6a6a6a;
     --color-facebook: #3f75e1;
     --color-youtube: #dd4040;
     --color-instagram: #ca39d2;
     --color-twitter: #3ab4cf;
-}
-
-body{
-    font-family: var(--monoscape);
 }
 
 nav{
@@ -128,13 +123,10 @@ nav{
 @keyframes cambioInit{
     0% {margin-left: 0;}
     20% {margin-left: 0;}
-
     25% {margin-left: -50%;}
     45% {margin-left: -50%;}
-    
     50% {margin-left: -100%;}
     70% {margin-left: -100%;}
-
     75% {margin-left: -200%;}
     100% {margin-left: -200%;}
 }
