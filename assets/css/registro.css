@@ -86,6 +86,8 @@ body{
 
 .seccion1 h1{
     margin: 3% 0;
+    position: relative;
+    z-index: -9;
 }
 
 .formulario{
@@ -120,4 +122,19 @@ input[type="radio"]{
     font-size: 20px;
     color: var(--color-blanco);
     cursor: pointer;
-} 
+}
+
+.btn-registro:hover{
+    transform: scale(1.1);
+    background-color: rgb(208, 34, 34);
+}
+
+@media (max-width:900px){
+    nav,div{
+        display: flex;
+        flex-direction: column;
+    }
+    #border-contact{
+        display:none
+    }
+}
