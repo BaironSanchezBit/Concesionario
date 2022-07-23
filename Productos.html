@@ -7,107 +7,512 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AUTO STYLE | productos</title>
     <link rel="stylesheet" href="/assets/css/productos.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 </head>
 
-<body>    
-    
-<nav>
-    <div class="div-start-nav">
-        <img src="assets/img/logo.png" class="logo-nav" alt="logo">
-        <div class="div-sections-nav">
-            <a href="index.html" class="a-nav"><img src="assets/img/home.png" class="img-nav" alt=""> Home</a>
-        </div>
-        <div class="div-sections-nav">
-            <a href="productos.html" class="a-nav"><img src="assets/img/productos.png" class="img-nav"
-                    alt="">Productos</a>
-        </div>
-    </div>
-    <div class="div-end-nav">
-        <div class="div-sections-nav">
-            <a href="contacto.html" class="a-nav" id="border-contact"><img src="assets/img/contactenos.png"
-                    class="img-nav" alt=""> Contactanos</a>
-        </div>
-        <div class="div-sections-nav">
-            <a href="login.html" class="a-nav"><img src="assets/img/login.png" alt="" class="img-nav">Login</a>
-        </div>
-        <div class="div-sections-nav">
-            <a href="registro.html" class="a-nav"><img src="assets/img/registrarse.png" alt=""
-                    class="img-nav">Registrarse</a>
-        </div>
-    </div>
-</nav>
+<body>
 
-    <h2>Hatchback</h2>
-    <section class="secciones">
-        <div>
-            <img src="/assets/img/Carros/Hatchback1.png" alt="">
-            <h3>$90.000.000</h3>
-            <span>Mercedes-benz Clase C 200 Exclusive 2.0 Automático</span>
-            <button>Cotizar</button>
+    <nav>
+        <div class="div-start-nav">
+            <img src="assets/img/logo.png" class="logo-nav" alt="logo">
+            <div class="div-sections-nav">
+                <a href="index.html" class="a-nav"><img src="assets/img/home.png" class="img-nav" alt=""> Home</a>
+            </div>
+            <div class="div-sections-nav">
+                <a href="productos.html" class="a-nav"><img src="assets/img/productos.png" class="img-nav"
+                        alt="">Productos</a>
+            </div>
         </div>
-        <div>
-            <img src="/assets/img/Carros/carro2.jpg" alt="">
-            <h3>$90.000.000</h3>
-            <button>Cotizar</button>
+        <div class="div-end-nav">
+            <div class="div-sections-nav">
+                <a href="contacto.html" class="a-nav" id="border-contact"><img src="assets/img/contactenos.png"
+                        class="img-nav" alt=""> Contactanos</a>
+            </div>
+            <div class="div-sections-nav">
+                <a href="login.html" class="a-nav"><img src="assets/img/login.png" alt="" class="img-nav">Login</a>
+            </div>
+            <div class="div-sections-nav">
+                <a href="registro.html" class="a-nav"><img src="assets/img/registrarse.png" alt=""
+                        class="img-nav">Registrarse</a>
+            </div>
         </div>
-        <div>
-            <img src="/assets/img/Carros/carro3.jpg" alt="">
-            <h3>$90.000.000</h3>
-            <button>Cotizar</button>
-        </div>
+    </nav>
+
+    <section class="section-all">
+        <section class="filtros">
+            <div class="div-filtros">
+                <div>
+                    <span>Carros, Camionetas y Otros</span>
+                </div>
+                <div>
+                    <h1>Carros</h1>
+                    <span class="span-result">33.786 resultados | <img src="assets/img/buscador-1.png" class="img-buscador" alt=""></span>
+                </div>
+                <div>
+                    <div class="div-checkbox">
+                        <span>Con financiamiento </span>
+                        <input type="checkbox" id="switch"></input>
+                        <label for="switch" class="lbl"></label>
+                    </div>
+                    <div class="div-checkbox">
+                        <span>Publicados hoy </span>
+                        <input type="checkbox" id="switch-1"></input>
+                        <label for="switch-1" class="lbl-1"></label>
+                    </div>
+                </div>
+                <div class="div-marca">
+                    <ul>
+                        <li class="marca">Marca</li>
+                        <li><a href="">Chevrolet (4.789)</a></li>
+                        <li><a href="">Renault (3.867)</a></li>
+                        <li><a href="">Toyota (3.332)</a></li>
+                        <li><a href="">Ford (2.582)</a></li>
+                        <li><a href="">Mazda (2.502)</a></li>
+                        <li><a href="">Nissan (2.238)</a></li>
+                        <li><a href="">Kia (2.160)</a></li>
+                        <li><a href="">Volkswagen (1.987)</a></li>
+                        <li><a href="">Mercedes-Benz (1.557)</a></li>
+                        <li  class="mostrar-mas"><a href="">Mostrar más</a></li>
+                    </ul>
+                </div>
+                <div class="div-marca">
+                    <ul>
+                        <li class="marca">Modelo</li>
+                        <li><a href="">Prado (865)</a></li>
+                        <li><a href="">3 (807)</a></li>
+                        <li><a href="">Logan (676)</a></li>
+                        <li><a href="">Duster (605)</a></li>
+                        <li><a href="">Sandero (589)</a></li>
+                        <li><a href="">Picanto (571)</a></li>
+                        <li><a href="">Fortuner (571)</a></li>
+                        <li><a href="">Hilux (547)</a></li>
+                        <li><a href="">Fiesta (525)</a></li>
+                        <li  class="mostrar-mas"><a href="">Mostrar más</a></li>
+                    </ul>
+                </div>
+                <div class="div-marca">
+                    <ul>
+                        <li class="marca">Año</li>
+                        <li><a href="">2023 (1.137)</a></li>
+                        <li><a href="">2022 (2.429)</a></li>
+                        <li><a href="">2021 (1.596)</a></li>
+                        <li><a href="">2020 (2.606)</a></li>
+                        <li><a href="">2019 (2.500)</a></li>
+                        <li><a href="">2018 (2.321)</a></li>
+                        <li><a href="">2017 (2.608)</a></li>
+                        <li><a href="">2016 (2.256)</a></li>
+                        <li><a href="">2015 (2.515)</a></li>
+                        <li  class="mostrar-mas"><a href="">Mostrar más</a></li>
+                    </ul>
+                </div>
+                <div class="div-marca">
+                    <ul>
+                        <li class="marca">Precio</li>
+                        <li><a href="">Hasta $ 45.000.000 (11.082)</a></li>
+                        <li><a href="">$45.000.000 a $80.000.000 (10.965)</a></li>
+                        <li><a href="">Más de $80.000.000 (11.355)</a></li>
+                        <li><input type="text" placeholder="Mínimo" class="input-m"> _ <input type="text" placeholder="Máximo" class="input-m"></li>
+                    </ul>
+                </div>
+                <div class="div-marca">
+                    <ul>
+                        <li class="marca">Ubibcación</li>
+                        <li><a href="">Bogotá D.C. (15.467)</a></li>
+                        <li><a href="">Antioquia (7.233)</a></li>
+                        <li><a href="">Valle Del Cauca (2.689)</a></li>
+                        <li><a href="">Cundinamarca (1.360)</a></li>
+                        <li><a href="">Santander (1.108)</a></li>
+                        <li><a href="">Atlántico (1.000)</a></li>
+                        <li><a href="">Risaralda (881)</a></li>
+                        <li><a href="">Boyaca (505)</a></li>
+                        <li><a href="">Meta (388)</a></li>
+                        <li  class="mostrar-mas"><a href="">Mostrar más</a></li>
+                    </ul>
+                </div>
+                <div class="div-marca">
+                    <ul>
+                        <li class="marca">Transmisión</li>
+                        <li><a href="">Mecánica (17.094)</a></li>
+                        <li><a href="">Automática (16.038)</a></li>
+                        <li><a href="">Automática secuencial (4)</a></li>
+                    </ul>
+                </div>
+                <div class="div-marca">
+                    <ul>
+                        <li class="marca">Kilómetros</li>
+                        <li><a href="">0 km (2.036)</a></li>
+                        <li><a href="">0 a 35.000 km (7.674)</a></li>
+                        <li><a href="">35.000 a 65.000 km (7.064)</a></li>
+                        <li><a href="">65.000 a 100.000 km (7.333)</a></li>
+                        <li><a href="">100.000 km o más (9.145)</a></li>
+                        <li><input type="text" placeholder="Mínimo" class="input-m"> _ <input type="text" placeholder="Máximo" class="input-m"></li>
+                    </ul>
+                </div>
+                <div class="div-marca">
+                    <ul>
+                        <li class="marca">Tipo de combustible</li>
+                        <li><a href="">Gasolina (28.990)</a></li>
+                        <li><a href="">Diésel (3.331)</a></li>
+                        <li><a href="">Híbrido (508)</a></li>
+                        <li><a href="">Gasolina y gas (229)</a></li>
+                        <li><a href="">Eléctrico (75)</a></li>
+                    </ul>
+                </div>
+                <div class="div-marca">
+                    <ul>
+                        <li class="marca">Control de tracción</li>
+                        <li><a href="">Delantera (12.283)</a></li>
+                        <li><a href="">4x4 (8.487)</a></li>
+                        <li><a href="">4x2 (6.724)</a></li>
+                        <li><a href="">Trasera (950)</a></li>
+                    </ul>
+                </div>
+                <div class="div-marca">
+                    <ul>
+                        <li class="marca">Tipo de carrocería</li>
+                        <li><a href="">Camioneta (10.431)</a></li>
+                        <li><a href="">Sedán (7.186)</a></li>
+                        <li><a href="">Hatchback (6.097)</a></li>
+                        <li><a href="">Pick-Up (2.189)</a></li>
+                        <li><a href="">Station Wagon (660)</a></li>
+                        <li><a href="">SUV (638)</a></li>
+                        <li><a href="">Coupé (616)</a></li>
+                        <li><a href="">Furgón (262)</a></li>
+                        <li><a href="">Convertible (149)</a></li>
+                        <li  class="mostrar-mas"><a href="">Mostrar más</a></li>
+                    </ul>
+                </div>
+                <div class="div-marca">
+                    <ul>
+                        <li class="marca">Condición</li>
+                        <li><a href="">Nuevo (2.036)</a></li>
+                        <li><a href="">Usado (31.100)</a></li>
+                    </ul>
+                </div>
+                <div class="div-marca">
+                    <ul>
+                        <li class="marca">Vendedor</li>
+                        <li><a href="">Directo (16.959)</a></li>
+                        <li><a href="">Concesionario (16.205)</a></li>
+                    </ul>
+                </div>
+                <div class="div-marca">
+                    <ul>
+                        <li class="marca">Paridad de la placa</li>
+                        <li><a href="">Par (14.272)</a></li>
+                        <li><a href="">Impar (13.536)</a></li>
+                    </ul>
+                </div>
+                <div class="div-marca">
+                    <ul>
+                        <li class="marca">Color</li>
+                        <li><a href="">Gris (5.645)</a></li>
+                        <li><a href="">Blanco (5.137)</a></li>
+                        <li><a href="">Plateado (4.184)</a></li>
+                        <li><a href="">Rojo (2.297)</a></li>
+                        <li><a href="">Negro (1.836)</a></li>
+                        <li><a href="">Azul (1.411)</a></li>
+                        <li><a href="">Verde (328)</a></li>
+                        <li><a href="">Dorado (318)</a></li>
+                        <li><a href="">Marrón (143)</a></li>
+                        <li  class="mostrar-mas"><a href="">Mostrar más</a></li>
+                    </ul>
+                </div>
+                <div class="div-marca">
+                    <ul>
+                        <li class="marca">Puertas</li>
+                        <li><a href="">2 (2.416)</a></li>
+                        <li><a href="">3 (741)</a></li>
+                        <li><a href="">4 (9.878)</a></li>
+                        <li><a href="">5 (20.026)</a></li>
+                        <li><a href="">6 (15)</a></li>
+                        <li><input type="text" placeholder="Mínimo" class="input-m"> _ <input type="text" placeholder="Máximo" class="input-m"></li>
+                    </ul>
+                </div>
+                <div class="div-marca">
+                    <ul>
+                        <li class="marca">Tiendas oficiales</li>
+                        <li><a href="">Solo tiendas oficiales (5.300)</a></li>
+                    </ul>
+                </div>
+                <div class="div-marca">
+                    <ul>
+                        <li class="marca">Último dígito de la placa</li>
+                        <li><a href="">0 (4.039)</a></li>
+                        <li><a href="">1 (2.732)</a></li>
+                        <li><a href="">2 (2.536)</a></li>
+                        <li><a href="">3 (2.721)</a></li>
+                        <li><a href="">4 (2.552)</a></li>
+                        <li><a href="">5 (2.602)</a></li>
+                        <li><a href="">6 (2.497)</a></li>
+                        <li><a href="">7 (2.959)</a></li>
+                        <li><a href="">8 (2.648)</a></li>
+                        <li  class="mostrar-mas"><a href="">Mostrar más</a></li>
+                        <li><input type="text" placeholder="Mínimo" class="input-m"> _ <input type="text" placeholder="Máximo" class="input-m"></li>
+                    </ul>
+                </div>
+                <div class="div-marca">
+                    <ul>
+                        <li class="marca">Dirección</li>
+                        <li><a href="">Hidráulica (12.656)</a></li>
+                        <li><a href="">Electroasistida (2.125)</a></li>
+                        <li><a href="">Asistida (1.961)</a></li>
+                        <li><a href="">Mecánica (329)</a></li>
+                    </ul>
+                </div>
+                <div class="div-marca">
+                    <ul>
+                        <li class="marca">Otras características</li>
+                        <li><a href="">Con frenos ABS (21.821)</a></li>
+                        <li><a href="">Con aire acondicionado (23.984)</a></li>
+                        <li><a href="">Con alarma (8.571)</a></li>
+                        <li><a href="">Con vidrios eléctricos (14.610)</a></li>
+                    </ul>
+                </div>
+                <div class="div-marca">
+                    <ul>
+                        <li class="marca">Detalles de la publicación</li>
+                        <li><a href="">Publicados hoy (1.101)</a></li>
+                    </ul>
+                </div>
+                <div class="div-marca">
+                    <ul>
+                        <li class="marca">Otras personas buscaron</li>
+                        <li><a href="">cativa</a></li>
+                        <li><a href="">carros a gas usados</a></li>
+                        <li><a href="">terneros destetados</a></li>
+                        <li><a href="">mazda cx3 2016</a></li>
+                        <li><a href="">corsa 5 puerta</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="logos-title">
+                <img src="assets/img/logo-volkswagen-carrusel-2.png" class="img-logos" alt="">
+            </div>
+            <section class="secciones">
+                <div class="div-article">
+                    <img src="/assets/img/Carros/8-Volkswagen-T-Cross.jpg.jpg" alt="">
+                    <h3>DESDE $91.990.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/1-Volkswagen-Nueva-Taos-Los-Coches.jpeg" alt="">
+                    <h3>DESDE $139.490.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/12-Volkswagen-Saveiro-plus.jpg.jpg" alt="">
+                    <h3>DESDE $71.990.000</h3>
+                    <button>Cotizar</button>
+                </div>
+            </section>
+            <section class="secciones">
+                <div class="div-article">
+                    <img src="/assets/img/Carros/Volkswagen-nuevo-jetta-gli-Los-Coches.jpeg" alt="">
+                    <h3>DESDE $97.990.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/2-Volkswagen-Polo.jpg.png" alt="">
+                    <h3>DESDE $80.990.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/7-Volkswagen-Nivus.jpg.jpg" alt="">
+                    <h3>DESDE $90.990.000</h3>
+                    <button>Cotizar</button>
+                </div>
+            </section>
+            <div class="logos-title">
+                <img src="assets/img/1-Can-Am-Ryker-los-coches.png" class="img-logos" alt="">
+            </div>
+            <section class="secciones">
+                <div class="div-article">
+                    <img src="/assets/img/Carros/Mustang-techo-rigido-Los-Coches.jpg.jpg" alt="">
+                    <h3>DESDE $105.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/Ford-Explorer-ST-Los-Coches-2021.jpeg" alt="">
+                    <h3>DESDE $105.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/Ford-F-150-2022-Los-Coches.jpeg" alt="">
+                    <h3>DESDE $105.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+            </section>
+            <section class="secciones">
+                <div class="div-article">
+                    <img src="/assets/img/Carros/Forf-Raptor-Los-Coches.jpg.webp" alt="">
+                    <h3>DESDE $87.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/o-Ford-Ranger-Raptor-Los-Coches.jpg.jpg" alt="">
+                    <h3>DESDE $87.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/1-Ford-Bronco-Los-Coches.jpeg" alt="">
+                    <h3>DESDE $87.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+            </section>
+            <div class="logos-title">
+                <img src="assets/img/can-am-v2.png" alt="">
+            </div>
+            <section class="secciones">
+                <div class="div-article">
+                    <img src="/assets/img/Carros/Cam-Am-Commander-DPS-2021-Los-Coches-1.png" alt="">
+                    <h3>DESDE $105.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/Cam-Am-Maverick-Sport-Los-Coches.png" alt="">
+                    <h3>DESDE $105.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/Cam-Am-Maverick-Trail-2020-Los-Coches.png.jpg" alt="">
+                    <h3>DESDE $105.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+            </section>
+            <section class="secciones">
+                <div class="div-article">
+                    <img src="/assets/img/Carros/Cam-Am-Outlander-450-570-Los-Coches.png" alt="">
+                    <h3>DESDE $87.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/1-Can-Am-Ryker-los-coches.png.jpg" alt="">
+                    <h3>DESDE $87.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/MaverickX3-XRS-Turbo-RR-Intense-Blue-Carbon-Black-Chalk-Grey-415x302-1.png" alt="">
+                    <h3>DESDE $87.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+            </section>
+            <div class="logos-title">
+                <img src="assets/img/Logo-Audi-180x80.png" alt="">
+            </div>
+            <section class="secciones">
+                <div class="div-article">
+                    <img src="/assets/img/Carros/AUDI-A3-LOS-COCHES.jpeg" alt="">
+                    <h3>DESDE $105.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/AUDI-Q2-2021-LOS-COCHES.jpg.jpg" alt="">
+                    <h3>DESDE $105.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/AUDI-Q3-2021-LOS-COCHES.jpg.jpg" alt="">
+                    <h3>DESDE $105.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+            </section>
+            <section class="secciones">
+                <div class="div-article">
+                    <img src="/assets/img/Carros/Audi-RSQ3-Los-Coches.jpeg" alt="">
+                    <h3>DESDE $87.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/AUDI-S3-LOS-COCHES.jpeg" alt="">
+                    <h3>DESDE $87.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/1-Audi-RS3-Los-Coches.jpeg" alt="">
+                    <h3>DESDE $87.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+            </section>
+            <div class="logos-title">
+                <img src="assets/img/Logo-Jeep.png" alt="">
+            </div>
+            <section class="secciones">
+                <div class="div-article">
+                    <img src="/assets/img/Carros/Jeep-Commander-Los-Coches.jpeg" alt="">
+                    <h3>DESDE $105.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/Jeep-Compass-Longitude-Los-Coches.jpeg" alt="">
+                    <h3>DESDE $105.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/Jeep-Gladiator-Los-Coches-2021.jpeg" alt="">
+                    <h3>DESDE $105.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+            </section>
+            <section class="secciones">
+                <div class="div-article">
+                    <img src="/assets/img/Carros/Jeep-Renegade-Los-Coches.jpeg" alt="">
+                    <h3>DESDE $87.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/Jeep-wrangler-sport.jpeg" alt="">
+                    <h3>DESDE $87.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/1-Jeep-Wrangler-Unlimited-Sahara-Los-Coches.jpeg" alt="">
+                    <h3>DESDE $87.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+            </section>
+            <div class="logos-title">
+                <img src="assets/img/logo-renault-menu-2021-1.png" alt="">
+            </div>
+            <section class="secciones">
+                <div class="div-article">
+                    <img src="/assets/img/Carros/Renault-Alaskan-Los-Coches-2022.jpeg" alt="">
+                    <h3>DESDE $105.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/Renault-Captur-Los-Coches-2022.jpeg" alt="">
+                    <h3>DESDE $105.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/Renault-Duster-Los-Coches-2022.jpeg" alt="">
+                    <h3>DESDE $105.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+            </section>
+            <section class="secciones">
+                <div class="div-article">
+                    <img src="/assets/img/Carros/Renault-Koleos-Los-Coches-2022.jpeg" alt="">
+                    <h3>DESDE $87.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/Renault-Oroch-Los-Coches-2022.jpeg" alt="">
+                    <h3>DESDE $87.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+                <div class="div-article">
+                    <img src="/assets/img/Carros/Renault-Stepway-Los-Coches-2022.jpeg" alt="">
+                    <h3>DESDE $87.000.000</h3>
+                    <button>Cotizar</button>
+                </div>
+            </section>
+        </section>
     </section>
-    <h2>Sedan</h2>
-    <section class="secciones">
-        <div>
-            <img src="/assets/img/Carros/Sedan1.jpeg" alt="">
-            <h3>$80.000.000</h3>
-            <span>Volkswagen Voyage</span>
-            <button>Cotizar</button>
-        </div>
-    </section>
-    <h2>SUV</h2>
-    <section class="secciones">
-        <div>
-            <img src="/assets/img/Carros/suv1.jpg" alt="">
-            <h3>$105.000.000</h3>
-            <span>HONDA WR-V</span>
-            <button>Cotizar</button>
-        </div>
-        <div>
-            <img src="/assets/img/Carros/suv2.jpg" alt="">
-            <h3>$105.000.000</h3>
-            <span>HONDA WR-V</span>
-            <button>Cotizar</button>
-        </div>
-        <div>
-            <img src="/assets/img/Carros/suv3.jpg" alt="">
-            <h3>$105.000.000</h3>
-            <span>HONDA WR-V</span>
-            <button>Cotizar</button>
-        </div>
-    </section>
-    <h2>Pick-Up</h2>
-    <section class="secciones">
-        <div>
-            <img src="/assets/img/Carros/pickup1.jpg" alt="">
-            <h3>$87.000.000</h3>
-            <span>Renault Alaskan</span>
-            <button>Cotizar</button>
-        </div>
-        <div>
-            <img src="/assets/img/Carros/pickup2.jpg" alt="">
-            <h3>$87.000.000</h3>
-            <span>Renault Alaskan</span>
-            <button>Cotizar</button>
-        </div>
-        <div>
-            <img src="/assets/img/Carros/pickup3.jpg" alt="">
-            <h3>$87.000.000</h3>
-            <span>Renault Alaskan</span>
-            <button>Cotizar</button>
-        </div>
-    </section>
+
 </body>
-
 </html>

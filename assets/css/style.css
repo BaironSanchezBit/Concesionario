@@ -65,8 +65,9 @@ nav{
 body{
     background-image: url("../img/img5.jpg");
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 100vh;
-    background-attachment: fixed;
 }
 
 .contenedor{
@@ -82,13 +83,6 @@ p{
     font-family: monospace;
     color: #000;
 }
-
-/*.seccion1{
-    font-size: 26px;
-    margin: 3px;
-    font-family: serif;
-    border-radius: 6px;
-}*/
 
 .formulario input[type="name"],
 .formulario input[type="surname"],
@@ -157,7 +151,6 @@ p{
     font-size: medium;
     padding: 3px 0px;
     color: #000;
-    text-shadow: rgb(8 7 7) 4px 5px 3px;
 }
 
 
@@ -378,3 +371,4 @@ h1{
         width: 80%;
         font-size: 80%;
     }
+}
