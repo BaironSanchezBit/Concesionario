@@ -3,7 +3,7 @@
     --color-gris-fondo: #f4f4f4;
     --color-azul: #326fac;
     --color-blanco: #fff;
-    --color-footer: #6a6a6a;
+    --color-footer: #5c6a75;
     --color-facebook: #3f75e1;
     --color-youtube: #dd4040;
     --color-instagram: #ca39d2;
@@ -11,7 +11,9 @@
     --color-nav: #0c3779;
     --color-text-nav: #ffffff;
     --color-verde: #43df72;
+    --color-verde-1: #3dca67;
     --color-verde-oscuro: #39884d;
+    --color-verde-oscuro-1: #327744;
 }
     
 nav{
@@ -20,6 +22,7 @@ nav{
     justify-content: space-between;
     position: sticky;
     top: 0;
+    height: 75px;
 }
 .logo-nav img{
     width: 300px;
@@ -36,6 +39,11 @@ nav{
 .div-menu li{
     margin: 0 1rem;
     list-style: none;
+    display: flex;
+}
+.div-menu li:hover{
+    background-color: #294799;
+    border-radius: 10px;
 }
 .div-menu a{
     color: var(--color-text-nav);
@@ -54,10 +62,16 @@ nav{
     padding: .25rem .75rem;
     border-radius: .2rem;
 }
+.login:hover{
+    background-color: var(--color-verde-1);
+}
 .register{
     background-color: var(--color-verde-oscuro);
     padding: .25rem .75rem;
     border-radius: .2rem;
+}
+.register:hover{
+    background-color: var(--color-verde-oscuro-1);
 }
 .menu-icon img{
     width: 30px;

@@ -16,6 +16,7 @@ nav{
     justify-content: space-between;
     position: sticky;
     top: 0;
+    height: 75px;
 }
 .logo-nav img{
     width: 300px;
@@ -32,6 +33,11 @@ nav{
 .div-menu li{
     margin: 0 1rem;
     list-style: none;
+    display: flex;
+}
+.div-menu li:hover{
+    background-color: #294799;
+    border-radius: 10px;
 }
 .div-menu a{
     color: var(--color-text-nav);
@@ -42,7 +48,7 @@ nav{
     font-size: 1.2rem;
 }
 .div-menu a img{
-    width: 25px;
+    width: 35px;
     padding: 0 5px;
 }
 .login{
@@ -50,10 +56,16 @@ nav{
     padding: .25rem .75rem;
     border-radius: .2rem;
 }
+.login:hover{
+    background-color: var(--color-verde-1);
+}
 .register{
     background-color: var(--color-verde-oscuro);
     padding: .25rem .75rem;
     border-radius: .2rem;
+}
+.register:hover{
+    background-color: var(--color-verde-oscuro-1);
 }
 .menu-icon img{
     width: 30px;
