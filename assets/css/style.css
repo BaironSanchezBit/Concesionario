@@ -5,6 +5,10 @@
     --color-gris-hover:#aea8a8;
     --color-gris-nav: #d2d4d5;
     --color-text-nav: #000;
+    --color-facebook: #3f75e1;
+    --color-youtube: #dd4040;
+    --color-instagram: #ca39d2;
+    --color-twitter: #3ab4cf;
 }
 
 nav{
@@ -377,3 +381,85 @@ h1{
         width: 80%;
         font-size: 80%;
     }
+}
+
+.enlaces{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-footer-web{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30%;
+}
+.img-footer{
+    width: 30px;
+    height: 21px;
+    padding: 10px;
+}
+.sitios-web, .sitios-web1, .sitios-web2, .sitios-web3{
+    padding: 0.1% 4.13%; 
+    border-top: 1px solid var(--color-gris-nav);
+    border-bottom: 1px solid var(--color-gris-nav);
+}
+.sitios-web a, .sitios-web1 a, .sitios-web2 a, .sitios-web3 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--color-blanco);
+}
+.sitios-web:hover{
+    background-color: var(--color-facebook);
+}
+.sitios-web1:hover{
+    background-color: var(--color-instagram);
+}
+.sitios-web2:hover{
+    background-color: var(--color-youtube);
+}
+.sitios-web3:hover{
+    background-color: var(--color-twitter);
+}
+.div-logo-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30%;
+}
+.div-logo-footer p{
+    font-size: 11px;
+}
+.logo-footer{
+    width: 150px;
+    margin: 3% 0;
+}
+.whatsapp{
+    position: fixed;
+    bottom: 0;
+    width: 4%;
+    padding: 1%;
+}
+.whatsapp:hover{
+    transform: scale(1.1);
+}
+
+.mensajes{
+    position: fixed;
+    bottom: 0;
+    left: 93%;
+    width: 4%;
+    padding: 1%;
+}
+.mensajes:hover{
+    transform: scale(1.1);
+}
+
+.color{
+    background-color: #91979f;
+    padding: 2%;
+}
