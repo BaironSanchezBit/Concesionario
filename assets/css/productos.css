@@ -6,11 +6,13 @@
     --color-nav: #0c3779;
     --color-text-nav: #ffffff;
     --color-verde: #43df72;
+    --color-verde-1: #3dca67;
     --color-verde-oscuro: #39884d;
+    --color-verde-oscuro-1: #327744;
     --color-gris-fondo: #f4f4f4;
     --color-azul: #326fac;
     --color-blanco: #fff;
-    --color-footer: #6a6a6a;
+    --color-footer: #5c6a75;
     --color-facebook: #3f75e1;
     --color-youtube: #dd4040;
     --color-instagram: #ca39d2;
@@ -102,9 +104,9 @@ nav{
     .div-menu ul{
         display: block;
         position: fixed;
-        top: 64px;
+        top: 60px;
         left: -200%;
-        background-color: #222;
+        background-color: #3a8ddfe6;
         width: 100%;
         height: 100vh;
         right: 0;
@@ -119,9 +121,32 @@ nav{
         background-color: none;
         padding: 1rem;
     }
+    .register{
+        background-color: none;
+        padding: 1rem 5rem;
+    }
     #check:checked ~ ul{
         left: 0;
         transition: all .25s;
+        padding: 0;
+    }
+    .secciones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .empresa h2, .menu-footer h2{
+        font-size: 20px;
+    }
+    .empresa ul li, .menu-footer ul li{
+        font-size: 18px;
+    }
+    .div-logo-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 20% !important;
     }
 }
 
@@ -139,9 +164,9 @@ nav{
     .div-menu ul{
         display: block;
         position: fixed;
-        top: 64px;
+        top: 60px;
         left: -200%;
-        background-color: #222;
+        background-color: #3a8ddfe6;
         width: 100%;
         height: 100vh;
         right: 0;
@@ -159,8 +184,39 @@ nav{
     #check:checked ~ ul{
         left: 0;
         transition: all .25s;
+        padding: 0;
+    }
+    .register{
+        background-color: none;
+        padding: 1rem 5rem;
+    }
+    .div-logo-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 10% !important;
+    }
+    .div-footer-web{
+        width: 184px !important;
+    }
+    .img-footer {
+        width: 22px !important;
+        height: 15px !important;
+        padding: 8px !important;
     }
 }
+@media (max-width:576px){
+    .filtros{
+        display: none !important;
+    }
+    .section-all-product{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 10% 260px;
+    }
+} 
 /* FILTROS */
 .section-all{
     display: grid;
@@ -301,7 +357,7 @@ nav{
 }
 
 .img-logos{
-    width: 10%;
+    width: 130px;
 }
 
 footer{

@@ -7,7 +7,11 @@
     --color-nav: #0c3779;
     --color-text-nav: #ffffff;
     --color-verde: #43df72;
+    --color-verde-1: #3dca67;
     --color-verde-oscuro: #39884d;
+    --color-verde-oscuro-1: #327744;
+    --color-gris-fondo: #f4f4f4;
+    --color-azul: #326fac;
 }
 
 /*NAVBAR*/
@@ -20,7 +24,7 @@ nav{
     height: 75px;
 }
 .logo-nav img{
-    width: 300px;
+    width: 330px;
     padding-left: 30px;
 }
 .div-menu{
@@ -49,7 +53,7 @@ nav{
     font-size: 1.2rem;
 }
 .div-menu a img{
-    width: 25px;
+    width: 35px;
     padding: 0 5px;
 }
 .login{
@@ -91,9 +95,9 @@ nav{
     .div-menu ul{
         display: block;
         position: fixed;
-        top: 70px;
-        left: -100%;
-        background-color: #222;
+        top: 60px;
+        left: -200%;
+        background-color: #3a8ddfe6;
         width: 100%;
         height: 100vh;
         right: 0;
@@ -106,11 +110,16 @@ nav{
     }
     .login{
         background-color: none;
-        padding: 1rem;
+        padding: 1rem 4rem;
+    }
+    .register{
+        background-color: none;
+        padding: 1rem 5rem;
     }
     #check:checked ~ ul{
         left: 0;
         transition: all .25s;
+        padding: 0;
     }
 }
 
@@ -128,9 +137,9 @@ nav{
     .div-menu ul{
         display: block;
         position: fixed;
-        top: 70px;
-        left: -100%;
-        background-color: #222;
+        top: 60px;
+        left: -200%;
+        background-color: #3a8ddfe6;
         width: 100%;
         height: 100vh;
         right: 0;
@@ -143,11 +152,16 @@ nav{
     }
     .login{
         background-color: none;
-        padding: 1rem;
+        padding: 1rem 4rem;
+    }
+    .register{
+        background-color: none;
+        padding: 1rem 5rem;
     }
     #check:checked ~ ul{
         left: 0;
         transition: all .25s;
+        padding: 0;
     }
 }
 /*NAVBAR*/
@@ -224,8 +238,9 @@ input[type="radio"]{
 
 @media (max-width:900px){
     nav,div{
+        align-items: center;
         display: flex;
-        flex-direction: column;
+        justify-content: center;    
     }
     #border-contact{
         display:none
